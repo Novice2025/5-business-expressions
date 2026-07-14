@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business English Pro Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { border-bottom: 2px solid #3b82f6; color: #2563eb; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans min-h-screen">
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-10">
+        <div class="max-w-5xl mx-auto px-6 py-4">
+            <h1 class="text-2xl font-bold text-slate-900">Business English Pro Guide</h1>
+            <nav class="flex space-x-6 mt-4">
+                <button onclick="showTab('library')" class="tab-btn active px-1 py-2 font-medium text-slate-600 transition">Idiom Library</button>
+                <button onclick="showTab('scenarios')" class="tab-btn px-1 py-2 font-medium text-slate-600 transition">Situational Walkthroughs</button>
+                <button onclick="showTab('exercise')" class="tab-btn px-1 py-2 font-medium text-slate-600 transition">Advanced Challenge</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-8">
+        
+        <!-- Library Section -->
+        <div id="library" class="tab-content active">
+            <h2 class="text-3xl font-bold mb-8">Idiom Library</h2>
+            <div id="idiom-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+
+        <!-- Scenarios Section -->
+        <div id="scenarios" class="tab-content">
+            <h2 class="text-3xl font-bold mb-8">6 Professional Situations</h2>
+            <div class="space-y-8">
+                <!-- Scenario 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-xl text-blue-600">1. The Late-Night Client Sync</h3>
+                    <p class="text-slate-600 mt-2">Situation: A client calls you at 5:00 PM asking for an urgent update on three deliverables.</p>
+                    <div class="mt-4 bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <p class="italic">"I appreciate the urgency. With several <strong>balls in the air</strong> regarding these deliverables, I want to be thorough. I'll synthesize the status by tomorrow morning—the design phase is <strong>good to go</strong>, I'm just finalizing the budget approval."</p>
+                    </div>
+                </div>
+                <!-- Scenario 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-xl text-blue-600">2. The Remote Strategy Sync</h3>
+                    <p class="text-slate-600 mt-2">Situation: You are leading a team of 8 remote contributors with conflicting ideas.</p>
+                    <div class="mt-4 bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <p class="italic">"I know we have diverse perspectives, and trying to align everyone sometimes feels like <strong>herding cats</strong>. Before we finalize the roadmap, let's do a <strong>brain dump</strong> on the shared board—get every idea down so we can find the common thread."</p>
+                    </div>
+                </div>
+                <!-- Scenario 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-xl text-blue-600">3. Setting Boundaries on New Projects</h3>
+                    <p class="text-slate-600 mt-2">Situation: Your manager wants you to start a brand new project, but you are already at full capacity.</p>
+                    <div class="mt-4 bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <p class="italic">"I would love to support this new initiative, but I currently have <strong>too much on my plate</strong> to give it the attention it deserves. Could we <strong>put this on the backburner</strong> for two weeks until I clear my current backlog?"</p>
+                    </div>
+                </div>
+                <!-- Scenario 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-xl text-blue-600">4. Preventing Scope Creep</h3>
+                    <p class="text-slate-600 mt-2">Situation: Your team is brainstorming features for a simple app and is starting to add complex, unnecessary requirements.</p>
+                    <div class="mt-4 bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <p class="italic">"Wait, let's stop. If we try to fix every minor edge case now, we are going to <strong>boil the ocean</strong>. Let’s focus on the MVP. Once that is <strong>good to go</strong>, we can iterate."</p>
+                    </div>
+                </div>
+                <!-- Scenario 5: NEW -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-xl text-blue-600">5. Managing Over-Ambition</h3>
+                    <p class="text-slate-600 mt-2">Situation: A colleague wants to rewrite the entire company CRM from scratch in two weeks.</p>
+                    <div class="mt-4 bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <p class="italic">"I appreciate the enthusiasm, but that sounds like trying to <strong>boil the ocean</strong>. Let's list the core modules we actually need first. If we tackle the entire architecture at once, we'll lose focus. Let's put the full rewrite on the <strong>backburner</strong> and build an API bridge instead."</p>
+                    </div>
+                </div>
+                <!-- Scenario 6: NEW -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                    <h3 class="font-bold text-xl text-blue-600">6. Testing New Processes</h3>
+                    <p class="text-slate-600 mt-2">Situation: You have an idea to change how the team files expenses, but you want to check if the finance team will accept it first.</p>
+                    <div class="mt-4 bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
+                        <p class="italic">"I’ve drafted a simplified workflow for expense reporting. Before I present this to the entire department, I’d like to <strong>run it up the flagpole</strong> with you to get your initial feedback. If you think it’s a <strong>game changer</strong>, I’ll prepare the full presentation."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise Section -->
+        <div id="exercise" class="tab-content">
+            <h2 class="text-3xl font-bold mb-8">Advanced Challenge</h2>
+            <div class="bg-white p-8 rounded-2xl border border-slate-200">
+                <p class="text-lg text-slate-700 mb-6">Read the following dialogue. Which three idioms would fit perfectly in the blank spaces?</p>
+                <div class="bg-slate-900 text-slate-100 p-6 rounded-xl font-mono text-sm leading-relaxed mb-6">
+                    Manager: "We need to fix the entire logistics system by next week. It's a huge task."<br>
+                    You: "(1) __________. We shouldn't try to solve everything at once. Let's just focus on the courier dispatch."<br>
+                    Manager: "Fair point. What about the new reporting dashboard?"<br>
+                    You: "(2) __________. It was finished by the dev team this morning. And regarding the new project request from HR? (3) __________. I simply can't take on more work this week."
+                </div>
+                <button onclick="toggleAnswers()" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Reveal Answers</button>
+                <div id="answers" class="hidden mt-6 p-4 bg-green-50 text-green-800 rounded-lg border border-green-200">
+                    <p><strong>(1)</strong> Don't boil the ocean.</p>
+                    <p><strong>(2)</strong> It's good to go.</p>
+                    <p><strong>(3)</strong> I have too much on my plate.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const idioms = [
+            { term: "Backburner", def: "Temporarily setting aside a task.", explanation: "Use this to politely decline an immediate request by showing you've assessed priorities.", tip: "Use when you need to signal that you are deprioritizing, not cancelling, a project.", extra: "E.g., 'We're deprioritizing the mobile app redesign; it's on the backburner until we stabilize the web version.'" },
+            { term: "Balls in the air", def: "Juggling multiple tasks simultaneously.", explanation: "Signals that your capacity is full without sounding defensive.", tip: "Effective for explaining your current capacity to a manager.", extra: "E.g., 'I’m juggling the audit, the hiring process, and the client onboarding—that’s a lot of balls in the air.'" },
+            { term: "Too much on my plate", def: "Overwhelmed with tasks.", explanation: "A professional shorthand for 'I am at capacity' to prevent burnout.", tip: "The standard way to set boundaries professionally.", extra: "E.g., 'I appreciate you asking me to join the committee, but I have too much on my plate right now.'" },
+            { term: "Boil the ocean", def: "Taking on an overly ambitious/complex task.", explanation: "Injects realism into strategy sessions.", tip: "Used to caution against scope creep or over-complication.", extra: "E.g., 'We don't need to rebuild the infrastructure from scratch, that's just boiling the ocean.'" },
+            { term: "Brain dump", def: "Quickly capturing ideas.", explanation: "Validates the process of raw ideation and clears mental clutter.", tip: "Great technique to start a creative or strategy meeting.", extra: "E.g., 'Let's have everyone do a brain dump of all project risks before we start our planning phase.'" },
+            { term: "Game changer", def: "A decision that significantly alters outcomes.", explanation: "Shifts conversation from routine to high-impact value.", tip: "Used to express enthusiasm for high-impact results.", extra: "E.g., 'Implementing real-time data analytics was a total game changer for our decision-making.'" },
+            { term: "Good to go", def: "Complete or ready for action.", explanation: "Provides a clear signal for hand-offs, minimizing questions.", tip: "Use to confirm readiness during hand-offs or launches.", extra: "E.g., 'Is the slide deck finalized? Great, if it's good to go, I'll send the calendar invite.'" },
+            { term: "Herding cats", def: "Managing disorganized groups.", explanation: "Uses humor to acknowledge the difficulty of team alignment.", tip: "Best reserved for internal, informal conversations.", extra: "E.g., 'Getting feedback from five different VP stakeholders is like herding cats.'" },
+            { term: "Run it up the flagpole", def: "Proposing an idea to test reaction.", explanation: "Low-risk strategy for seeking consensus before full commitment.", tip: "Useful when seeking buy-in for draft/early-stage ideas.", extra: "E.g., 'Why don't you run it up the flagpole with the Director first to see if they like the direction?'" }
+        ];
+
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function toggleAnswers() {
+            document.getElementById('answers').classList.toggle('hidden');
+        }
+
+        const grid = document.getElementById('idiom-grid');
+        idioms.forEach(i => {
+            grid.innerHTML += `
+                <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-blue-600 mb-2">${i.term}</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-2">${i.def}</p>
+                    <p class="text-slate-500 text-xs italic mb-4">${i.explanation}</p>
+                    <p class="text-slate-700 text-xs font-semibold mb-4 bg-slate-100 p-2 rounded">${i.extra}</p>
+                    <div class="bg-blue-50 p-3 rounded-lg text-xs text-blue-800 border border-blue-100">
+                        <strong>Usage Tip:</strong> ${i.tip}
+                    </div>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
